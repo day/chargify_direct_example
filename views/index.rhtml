@@ -24,12 +24,9 @@
     }
   ).to_form_inputs %>
   <fieldset>
-    <legend>Select Plan</legend>
+    <legend>Subscribe Today</legend>
     <p>
-      <input type="radio" name="signup[product][handle]" id="signup_product_handle_basic" value="basic" <%= 'checked' if original_params.signup.product[:handle] == 'basic' %>/><label>Basic</label>
-    </p>
-    <p>
-      <input type="radio" name="signup[product][handle]" id="signup_product_handle_pro" value="pro" <%= 'checked' if original_params.signup.product[:handle] == 'pro' %>/><label>Pro</label>
+      <input type="checkbox" name="signup[product][handle]" id="signup_product_handle_member" value="member" <%= 'checked' if original_params.signup.product[:handle] == 'member' %>/><label>Yes!</label>
     </p>
   </fieldset>
   
