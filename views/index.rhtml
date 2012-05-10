@@ -53,6 +53,10 @@
       <label for="signup_customer_email">Email</label><br/>
       <input type="text" name="signup[customer][email]" id="signup_customer_email" value="<%= h(original_params.signup.customer[:email]) %>"/>
     </p>
+    <p>
+      <label for="signup_customer_reference">Reference</label><br/>
+      <input type="text" name="signup[customer][reference]" id="signup_customer_reference" value="<%= h(original_params.signup.customer[:reference]) %>"/>
+    </p>
   </fieldset>
   
   <fieldset>
