@@ -17,7 +17,7 @@
 </div>
 <% end %>
 
-<form method="post" action="<%= chargify.base_uri %>/signups">
+<form id="signup" method="post" action="<%= chargify.base_uri %>/signups">
   <%= chargify.direct.secure_parameters(
     :data => {
       :redirect_uri => "http://localhost:9292/verify"
@@ -94,7 +94,7 @@
   </fieldset>
   
   <p>
-    <input type="submit" value="Sign Up" />
+    <button id="signup">Sign Up</button>
     or
     <a href="/">Go Back</a>
   </p>
